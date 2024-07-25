@@ -4,10 +4,10 @@
 import pandas as pd
 
 #Load the dataset
-file_path="C:\Projects\CipherSchools Data Science Project\Mall_Customers.csv"
+file_path="C:\Projects\CipherSchools Data Science Project\cleaned_mall_customers.csv"
 # converting the data into a dataframe
 data=pd.read_csv(file_path)
-
+# the dataset is already clean so there is no need of cleaning the data, but for the safer side, I am performing data cleaning if the dataset contains any null values in it.
 #display the first few rows of the dataset
 print(data.head(10))
 count=data.isnull().sum()
@@ -29,22 +29,26 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 #histplot-Age,Annual income,Spending score
 # Visualizing distributions
+# Age Distribution
 plt.figure(figsize=(10, 6))
 sns.histplot(data['Age'], bins=30, kde=True)
 plt.title('Age Distribution')
 plt.show()
 
+# Annual Income Distribution
 plt.figure(figsize=(10, 6))
 sns.histplot(data['AnnualIncome'], bins=30, kde=True)
 plt.title('Annual Income Distribution')
 plt.show()
 
+# Spending Score Distribution
 plt.figure(figsize=(10, 6))
 sns.histplot(data['SpendingScore'], bins=30, kde=True)
 plt.title('Spending Score Distribution')
 plt.show()
 
 # Visualizing relationships
+# Income vs Spending Score
 plt.figure(figsize=(10, 6))
 sns.scatterplot(data=data, x='AnnualIncome', y='SpendingScore', hue='Gender')
 plt.title('Income vs Spending Score')
