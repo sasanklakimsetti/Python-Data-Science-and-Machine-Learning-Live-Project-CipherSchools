@@ -13,4 +13,7 @@ Outcomes: Customer segmentation is a crucial aspect of customer relationship man
 	Increase customer retention: Implementing strategies to retain high-value customers and reduce churn rates.
 	Enhance sales and revenue: Identify opportunities for cross-selling and up-selling to maximize sales and revenue.
 
+![Screenshot 2024-10-10 110622](https://github.com/user-attachments/assets/0f0e50e3-d389-4aef-ac44-d0aca7ea2db2)
+
+
 By leveraging customer segmentation, the retail store can implement more effective marketing strategies, improve operational efficiency, and ultimately achieve a competitive advantage in the market.
